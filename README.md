@@ -18,3 +18,8 @@ __Links:__
 
 
 - https://auth0.com/blog/using-python-flask-and-angular-to-build-modern-apps-part-1/
+
+- install docker engine: https://docs.docker.com/engine/install/ubuntu/
+
+- https://stackoverflow.com/questions/2942485/psql-fatal-ident-authentication-failed-for-user-postgres
+
