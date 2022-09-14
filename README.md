@@ -23,3 +23,5 @@ __Links:__
 
 - https://stackoverflow.com/questions/2942485/psql-fatal-ident-authentication-failed-for-user-postgres
 
+- Flask Documentation: https://flask.palletsprojects.com/en/2.2.x/quickstart/
+
