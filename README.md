@@ -27,5 +27,7 @@ __Links:__
 
 - Email API for Sendgrid: https://docs.sendgrid.com/for-developers/sending-email/quickstart-python#enable-two-factor-authentication
 
-- Ignoring Files with Github: https://docs.github.com/en/get-started/getting-started-with-git/ignoring-files
+- Ignoring Files with Github: https://docs.github.com/en/get-started/getting-started-with-git/ignoring-files AND https://techblost.com/how-to-setup-gitignore-file/
+
+
 
