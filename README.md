@@ -25,3 +25,7 @@ __Links:__
 
 - Flask Documentation: https://flask.palletsprojects.com/en/2.2.x/quickstart/
 
+- Email API for Sendgrid: https://docs.sendgrid.com/for-developers/sending-email/quickstart-python#enable-two-factor-authentication
+
+- Ignoring Files with Github: https://docs.github.com/en/get-started/getting-started-with-git/ignoring-files
+
