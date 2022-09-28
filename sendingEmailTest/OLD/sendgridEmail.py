@@ -1,4 +1,5 @@
 ## https://docs.sendgrid.com/for-developers/sending-email/quickstart-python#complete-code-block
+# https://stackoverflow.com/questions/39717986/httperror-http-error-401-unauthorized-for-sendgrid-integration-with-python
 
 # importing library
 import sendgrid
@@ -13,9 +14,10 @@ print(api_key.read())
 
 
 # sending email
-sg = sendgrid.SendGridAPIClient(api_key=os.environ.get('SENDGRID_API_KEY'))
-from_email = Email("test@example.com")  # Change to your verified sender
-to_email = To("test@example.com")  # Change to your recipient
+#sg = sendgrid.SendGridAPIClient(api_key=os.environ.get('SENDGRID_API_KEY'))
+sg = sendgrid.SendGridAPIClient(api_key)
+from_email = Email("mp3converterandencryptor@gmail.com")  # Change to your verified sender
+to_email = To("sagejpc5@gmail.com")  # Change to your recipient
 subject = "Sending with SendGrid is Fun"
 content = Content("text/plain", "and easy to do anywhere, even with Python")
 mail = Mail(from_email, to_email, subject, content)
