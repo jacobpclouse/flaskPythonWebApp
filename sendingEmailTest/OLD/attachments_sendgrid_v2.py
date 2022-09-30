@@ -28,6 +28,8 @@ def defang_datetime():
 
 # Function to send email
 def sendEmailFunc(sendFROMemail,sendTOemail,subjectLine,contentOfMessage,attachmentName):
+    current_datetime = defang_datetime()
+
     with open(f'{attachmentName}', 'rb') as f:
         data = f.read()
         f.close()
@@ -41,7 +43,7 @@ def sendEmailFunc(sendFROMemail,sendTOemail,subjectLine,contentOfMessage,attachm
     content = Content("text/plain", f"{contentOfMessage}")
     attachedFile = Attachment(
         FileContent(encoded_file),
-        FileName(f'{attachmentName}'),
+        FileName(f'{current_datetime}__{attachmentName}'),
         FileType('mp3'), # try removing this, does it still work?
         Disposition('attachment')
     )
@@ -61,7 +63,6 @@ def sendEmailFunc(sendFROMemail,sendTOemail,subjectLine,contentOfMessage,attachm
 # -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 # Main
 # -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-current_datetime = defang_datetime()
 
 # This is where the information is gathered from the user to craft email
 # mp3converterandencryptor@gmail.com 
@@ -75,11 +76,11 @@ attachmentOfEmail = input("What is the name of the attachment you want to send? 
 '''
 
 sourceEmail = "mp3converterandencryptor@gmail.com"
-outboundEmail = "NOT MY REAL EMAIL DUH"
+outboundEmail = "sagejpc5@gmail.com"
 
-subjectOfEmail = "Testing attachment text TAKE 2"
+subjectOfEmail = "Testing attachment text TAKE 3"
 contentOfEmail = "This should have an attachement"
-attachmentOfEmail = f"{current_datetime}_encrypted.mp3" # remove from the final and just have static filename
+attachmentOfEmail = f"listeners.mp3" 
 
 sendEmailFunc(sourceEmail,outboundEmail,subjectOfEmail,contentOfEmail,attachmentOfEmail)
 
