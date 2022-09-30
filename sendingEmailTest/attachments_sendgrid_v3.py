@@ -82,7 +82,7 @@ attachmentOfEmail = input("What is the name of the attachment you want to send? 
 '''
 
 sourceEmail = "mp3converterandencryptor@gmail.com"
-outboundEmail = "sagejpc5@gmail.com"
+outboundEmail = "boi"
 
 subjectOfEmail = "Testing attachment text TAKE 4"
 contentOfEmail = "This should have an attachement"
