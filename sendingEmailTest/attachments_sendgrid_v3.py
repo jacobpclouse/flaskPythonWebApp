@@ -46,7 +46,7 @@ def sendEmailFunc(sendFROMemail,sendTOemail,subjectLine,contentOfMessage,attachm
     to_email = To(f"{sendTOemail}")  # Change to your recipient
     subject = f"{subjectLine}"
     #content = Content("text/plain", f"{contentOfMessage}")
-    html_content=f'<strong>{contentOfMessage}</strong>'
+    html_content=Content('text/html', f'<h1>Test Mail</h1><p>{contentOfMessage}</p><p><b>{current_datetime}</b></p>')
     attachedFile = Attachment(
         FileContent(encoded_file),
         FileName(f'{current_datetime}__{attachmentName}'),
@@ -82,7 +82,7 @@ attachmentOfEmail = input("What is the name of the attachment you want to send? 
 '''
 
 sourceEmail = "mp3converterandencryptor@gmail.com"
-outboundEmail = "NOT MY REAL EMAIL"
+outboundEmail = "sagejpc5@gmail.com"
 
 subjectOfEmail = "Testing attachment text TAKE 4"
 contentOfEmail = "This should have an attachement"
