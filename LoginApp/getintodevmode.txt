@@ -1,2 +1,12 @@
+# below will get into the auth env
+source auth/bin/activate
+
+
+
+# below will run project in dev mode
 export FLASK_APP=project
 export FLASK_DEBUG=1
+
+
+# below will just run the program
+flask run
