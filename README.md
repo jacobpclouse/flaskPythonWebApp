@@ -31,3 +31,4 @@ __Links:__
 
 - Setup environment var because of 401 error: https://stackoverflow.com/questions/39717986/httperror-http-error-401-unauthorized-for-sendgrid-integration-with-python
 
+- Login Setup: https://realpython.com/introduction-to-flask-part-2-creating-a-login-page/

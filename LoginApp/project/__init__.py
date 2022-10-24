@@ -2,6 +2,7 @@
 # Using Web Forms: https://www.digitalocean.com/community/tutorials/how-to-use-web-forms-in-a-flask-application
 ''' Forms Google: https://www.google.com/search?q=sending+form+data+with+flask&rlz=1C1GCEU_
 enUS990US990&oq=sending+form+data+with+flask&aqs=chrome..69i57.10167j0j1&sourceid=chrome&ie=UTF-8'''
+# https://stackoverflow.com/questions/73968584/flask-sqlalchemy-db-create-all-got-an-unexpected-keyword-argument-app
 
 from flask import Flask
 from flask_sqlalchemy import SQLAlchemy
@@ -24,5 +25,6 @@ def create_app():
     # blueprint for non-auth parts of app
     from .main import main as main_blueprint
     app.register_blueprint(main_blueprint)
+
 
     return app
